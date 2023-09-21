@@ -88,3 +88,16 @@ button.addEventListener('click', () => {
 
     moveMole();
 });
+
+
+
+/* //////      Start Game        ////// */
+
+const readyButton = document.querySelector('#ready');
+const gameTitle = document.querySelector('.game-title');
+const gameBackground = document.querySelector('.game-background');
+
+readyButton.addEventListener('click', () => {
+    gameTitle.classList.add('hidden');
+    gameBackground.classList.remove('hidden');
+})

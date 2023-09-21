@@ -13,13 +13,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="game-title hidden">
+    <div class="game-title">
         <h1>Whac-a-Mole</h1>
         <h3>See The Mole? Hammer It!</h3>
-        <button>Ready To Play</button>
+        <button id="ready">Ready To Play</button>
     </div>
+    
+    <div class="game-background hidden">
+        <div class="game-details_top">
+            <div class="game-details_score" id="score">Score: 0</div>
+            <div class="game-details_time" id="clock">Time Left: 10</div>
+        </div>
 
-    <div class="game-background">
         <div class="game-container">
             <div class="game-box" id="1">
                 <div class="mole"></div>
@@ -35,10 +40,8 @@
             <div class="game-box" id="8"></div>
             <div class="game-box" id="9"></div>
         </div>
-
+        
         <div class="game-details">
-            <div class="game-details_score" id="score">Score: </div>
-            <div class="game-details_time" id="clock">Time Left: </div>
             <button class="game-details_button">Test</button>
             <div class="display"></div>
         </div>
