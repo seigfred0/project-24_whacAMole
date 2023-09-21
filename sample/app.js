@@ -11,7 +11,8 @@ let timerId = null;
 
 function randomSquare() {
     squares.forEach((square) => {
-        square.classList.remove('mole')
+        const mole = document.querySelector('.mole')
+        console.log(mole)
     })
 
     let randomSquare = squares[Math.floor(Math.random() * 9)];
