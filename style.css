@@ -9,8 +9,21 @@ font-family: 'Gluten', cursive;
 */
 
 body {
-    font-family: 'Gluten', sans-serif;
+    /* font-family: 'Gluten', sans-serif; */
 }
+
+/* Fonts */
+@font-face {
+    font-family: minecrafter;
+    src: url(fonts/minecrafter/Minecrafter.Reg.ttf);
+}
+
+@font-face {
+    font-family: freePress;
+    src: url(fonts/free-press/Free\ press.ttf);
+}
+
+
 
 .game-title {
     display: flex;
@@ -29,15 +42,36 @@ body {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 9rem;
+    font-family: freePress;
+
+    background-image: url(imgs/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text; 
+    color: transparent; 
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
+    color: #A59983;
+    font-family: minecrafter;
+
+    letter-spacing: 0.8em;
+    word-spacing: 0.5em;
+
+    margin-top: 2em;
+    /* background-image: url(imgs/modal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    -webkit-background-clip: text; 
+    color: transparent;  */
 }
 
 .game-title button {
-    margin-top: 5em;
+    margin-top: 15em;
 
     padding: 1.5em 3em;
     font-size: 1.10rem;
@@ -48,12 +82,13 @@ h3 {
     border-radius: 0.75em;
     cursor: pointer;
 
-    background-color: rgba(168, 79, 79, 0.79);
-    color: white;
+    background-color: rgba(168, 79, 79, 1);
+    color: whitesmoke;
 }
 
 .game-title button:hover {
-    background-color: rgba(71, 156, 71, 0.775);
+    background-color: rgba(71, 156, 71, 1);
+    color: white;
 }
 
 
