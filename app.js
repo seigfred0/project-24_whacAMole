@@ -66,7 +66,7 @@ function countDown() {
         if (clockTime <= 0) {
             clearInterval(timer);
             clearInterval(clockTimeDown);
-            // alert('Game Dead');
+
             display.textContent = "Your Final Score is: " + result;
         }
     }, 1000)
