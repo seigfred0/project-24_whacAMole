@@ -62,12 +62,6 @@ h3 {
     word-spacing: 0.5em;
 
     margin-top: 2em;
-    /* background-image: url(imgs/modal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    -webkit-background-clip: text; 
-    color: transparent;  */
 }
 
 .game-title button {
@@ -193,6 +187,7 @@ h3 {
 /* Game Modal */
 
 .game-modal {
+    /* display: none; */
     position: fixed;
     left: 0;    
     top: 0;
@@ -219,4 +214,48 @@ h3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    font-size: 3rem;
+    color: white;
+    font-family: freePress;
+    letter-spacing: 0.20em;
+}
+
+.modal-content h4 {
+    background-image: url(imgs/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text; 
+    color: transparent; 
+}
+
+.modal-content span {
+    margin-top: 1.5em;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.modal-buttons button {
+    padding: 1em 2em;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family:'Courier New', Courier, monospace;
+    border: none;
+    border-radius: 5px;
+
+    margin-top: 6em;
+    
+}
+
+.play-again {
+    background-color: #AED40B;
+
+}
+
+.go-back-menu {
+    background-color: #AD7A99;
 }

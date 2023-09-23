@@ -10,19 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="game-title">
+    <div class="game-title hidden">
         <h3>Find The Mole</h3>
         <h1>Whac-a-Mole</h1>
         <button id="ready">Ready To Play</button>
     </div>
     
-    <div class="game-background hidden">
+    <div class="game-background ">
         <div class="game-details_top">
             <div class="game-details_score" id="score">Score: 0</div>
-            <div class="game-details_time" id="clock">Time Left: 10</div>
+            <div class="game-details_time" id="clock">Time Left: 5</div>
         </div>
 
         <div class="game-container">
@@ -43,13 +44,16 @@
         
         <div class="game-details">
             <button class="game-details_button">Ready</button>
-            <div class="display"></div>
         </div>
 
-        <div class="game-modal">
+        <div class="game-modal ">
             <div class="modal-content">
-                <p>Your Final Score Is: </p>
-                <p>X</p>
+                <h4>Your Final Score Is</h4>
+                <span id="result">0</span>
+                <div class="modal-buttons">
+                    <button class="play-again" id="playAgain">Play Again</button>
+                    <button class="go-back-menu" id="goBackMenu">Go Back Menu</button>
+                </div>
             </div>
         </div>
     </div>

@@ -5,7 +5,7 @@ const button = document.querySelector('.game-details_button');
 
 const score = document.querySelector('#score');
 const clock = document.querySelector('#clock');
-const display = document.querySelector('.display');
+// const display = document.querySelector('.display');
 
 
 let molePosition;
@@ -64,10 +64,16 @@ function countDown() {
         
 
         if (clockTime <= 0) {
+            let score = document.querySelector('#result');
+            console.log(score)
             clearInterval(timer);
             clearInterval(clockTimeDown);
 
-            display.textContent = "Your Final Score is: " + result;
+            score.textContent = result;
+            toggleModal();
+            clearScore();
+
+
         }
     }, 1000)
         
@@ -80,14 +86,20 @@ function countDown() {
 // }
 
 button.addEventListener('click', () => {
-    result = 0;
-    score.textContent = "Score: ";
-    display.textContent = ""; // Clear the display
+    // result = 0;
+    // score.textContent = "Score: ";
+    // display.textContent = ""; 
 
 
 
     moveMole();
 });
+
+function clearScore() {
+    result = 0;
+    score.textContent = "Score: 0";
+    // display.textContent = ""; 
+}
 
 
 
@@ -101,3 +113,29 @@ readyButton.addEventListener('click', () => {
     gameTitle.classList.add('hidden');
     gameBackground.classList.remove('hidden');
 })
+
+
+/*  Modal   */
+const playAgainBtn = document.querySelector('#playAgain');
+const goBackBtn = document.querySelector('#goBackMenu');
+
+const gameModal = document.querySelector('.game-modal');
+
+playAgainBtn.addEventListener('click', () => {
+    // gameModal.classList.toggle('hidden')
+    toggleModal()
+})
+
+goBackBtn.addEventListener('click', () => {
+    gameModal.classList.toggle('hidden');
+    gameBackground.classList.toggle('hidden');
+    gameTitle.classList.toggle('hidden');
+
+    clearScore();
+})
+
+function toggleModal() {
+    gameModal.classList.toggle('hidden');
+}
+
+
