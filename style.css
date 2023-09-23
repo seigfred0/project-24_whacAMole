@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-/* 
-font-family: 'Gluten', cursive;
-*/
-
-body {
-    /* font-family: 'Gluten', sans-serif; */
-}
-
 /* Fonts */
 @font-face {
     font-family: minecrafter;
@@ -22,8 +14,6 @@ body {
     font-family: freePress;
     src: url(fonts/free-press/Free\ press.ttf);
 }
-
-
 
 .game-title {
     display: flex;
@@ -85,14 +75,11 @@ h3 {
     color: white;
 }
 
-
-
 .game-background {
     height: 100vh;
     background-image: url(imgs/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
     background-position-y: bottom;
 
     display: flex;
@@ -103,27 +90,20 @@ h3 {
 }
 
 /* Hidden */
-
 .hidden {
     display: none;
 }
 
 
-
-
 /* Game */
 .game-container {
     width: 40%;
-    /* border: 2px solid black; */
     border-radius: 7px;
     height: 650px;
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2px;
     background-color: transparent;
-
-    
 }
 
 .game-container > div {
@@ -139,7 +119,6 @@ h3 {
 
 
 /*  Mole */
-
 .mole {
     background-image: url(imgs/mole.png);
     background-size: cover;
@@ -148,14 +127,10 @@ h3 {
     background-color: transparent;
     width: 65%;
     height: 65%;
-
-    /* padding: 1.5em; */
-    /* fix the padding later */
 }
 
 
 /* Game Details */
-
 .game-details_button {
     padding: 0.5em 3em;
     margin-top: 2em;
@@ -185,9 +160,7 @@ h3 {
 
 
 /* Game Modal */
-
 .game-modal {
-    /* display: none; */
     position: fixed;
     left: 0;    
     top: 0;
@@ -248,12 +221,10 @@ button:hover {
     border-radius: 5px;
 
     margin-top: 6em;
-    
 }
 
 .play-again {
     background-color: #AED40B;
-
 }
 
 .go-back-menu {

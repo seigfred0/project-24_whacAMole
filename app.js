@@ -5,8 +5,6 @@ const button = document.querySelector('.game-details_button');
 
 const score = document.querySelector('#score');
 const clock = document.querySelector('#clock');
-// const display = document.querySelector('.display');
-
 
 let molePosition;
 let result = 0;
@@ -14,7 +12,7 @@ let timer;
 let clockTime = 10;
 let clockTimeDown;
 
-function randomSquare() { // main function
+function randomSquare() { 
     squares.forEach((square) => {
         const mole = square.querySelector('.mole')
         if (mole) {
@@ -53,7 +51,6 @@ function moveMole() {
 
 
 function countDown() {
-    // clockTimeDown = setInterval(countDown, 1000);
     clearInterval(clockTimeDown);
     clockTime = 10;
     clock.textContent = "Time Left: " + clockTime;
@@ -78,30 +75,15 @@ function countDown() {
     }, 1000)
         
 }
-// if (clockTime <= 0) {
-//     display.textContent = "Your Final Score is: " + result;
-//     clearInterval(timer);
-//     clearInterval(clockTimeDown);
-//     console.log('It is zero')
-// }
 
 button.addEventListener('click', () => {
-    // result = 0;
-    // score.textContent = "Score: ";
-    // display.textContent = ""; 
-
-
-
     moveMole();
 });
 
 function clearScore() {
     result = 0;
     score.textContent = "Score: 0";
-    // display.textContent = ""; 
 }
-
-
 
 /* //////      Start Game        ////// */
 
@@ -122,7 +104,6 @@ const goBackBtn = document.querySelector('#goBackMenu');
 const gameModal = document.querySelector('.game-modal');
 
 playAgainBtn.addEventListener('click', () => {
-    // gameModal.classList.toggle('hidden')
     toggleModal()
 })
 
